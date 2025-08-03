@@ -1,0 +1,137 @@
+.confirmation-container{
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 500px;
+    height: 100%;
+    margin: 35px;
+   
+}
+.form-title{
+    color: #1e293b;
+    font-size: 28px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.name-text{
+    color: #334155;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.input-bar{
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+
+}
+
+.book-button{
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+.book-button-container{
+  text-align: center;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+.popup-container{
+    background-color: beige;
+    padding: 25px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+.date-style{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.time-style{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 25px;
+}
+.cross-button{
+    margin-left: 350px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.result-style{
+    font-size: 25px;
+    font-family: Georgia;
+    color: #334155;
+}
+.field-style{
+    font-weight: bold;
+    color: #0f172a;
+}
+
+@media screen and (max-width: 768px) {
+  .confirmation-container {
+    padding: 24px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .book-button {
+    width: 100%;
+  }
+
+  .popup-container {
+    padding: 24px 16px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .confirmation-container {
+    padding: 48px;
+  }
+
+  .form-title {
+    font-size: 30px;
+  }
+
+  .input-bar{
+    font-size: 17px;
+  }
+
+  .date-style {
+    font-size: 17px;
+  }
+
+  .book-button {
+    font-size: 18px;
+  }
+
+  .popup-container {
+    padding: 40px 32px;
+  }
+}
