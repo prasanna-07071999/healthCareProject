@@ -67,4 +67,3 @@ app.listen(PORT, () => {
 app.get('/api/doctors', (request, response) => {
   response.json(doctors)
 })
-

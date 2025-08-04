@@ -26,7 +26,7 @@ export const DoctorProvider = ({children}) => {
                 data:null,
                 errorMsg: null,
             })
-            const url="http://localhost:3001/api/doctors"
+            const url="https://heathcarebackend-production.up.railway.app/api/doctors"
             const response = await fetch(url)
             const fetchedData = await response.json()
              const formattedData = fetchedData.map(eachDoctor => ({
