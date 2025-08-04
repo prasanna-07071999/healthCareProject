@@ -34,7 +34,8 @@ export const DoctorProvider = ({children}) => {
                 name: eachDoctor.name,
                 imageUrl: eachDoctor.image,
                 specialization: eachDoctor.specialization,
-                availability: eachDoctor.availability
+                availability: eachDoctor.availability,
+                description: eachDoctor.description
             }))
 
             if(response.ok){

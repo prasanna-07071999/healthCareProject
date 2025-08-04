@@ -2,6 +2,7 @@ import './index.css'
 import {useState} from 'react'
 import Popup from 'reactjs-popup'
 import {IoMdClose} from 'react-icons/io'
+import Header from '../Header'
 
 const ConfirmationPage = () => {
     const [formData, setFormData] = useState({
@@ -26,7 +27,9 @@ const ConfirmationPage = () => {
     }
 
     return (
-        <div className='form-container'>
+        <>
+            <Header />
+            <div className='form-container'>
             <div className='confirmation-container'>
             <h1 className='form-title'>Appointment Form</h1>
             <form className='confirmation-form' onSubmit={onClickSubmitForm}>
@@ -124,7 +127,7 @@ const ConfirmationPage = () => {
                 >
                 <IoMdClose />
                 </button>
-                <h1>Appointment Confirmed</h1>
+                <h1 className='popup-title'>Appointment Confirmed</h1>
                 <p className='result-style'><span className='field-style'>Name: </span> {formData.name}</p>
                 <p className='result-style'><span className='field-style'>Age: </span> {formData.age}</p>
                 <p className='result-style'><span className='field-style'>City: </span> {formData.city}</p>
@@ -137,6 +140,8 @@ const ConfirmationPage = () => {
 
         </div>
         </div>
+        </>
+        
         
     )
 }

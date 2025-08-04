@@ -2,6 +2,7 @@ import { useContext} from "react";
 import {ClipLoader} from 'react-spinners'
 import DoctorCard from '../DoctorCard'
 import {DoctorContext} from '../../context/DoctorContext';
+import Header from "../Header";
 
 
 import './index.css'
@@ -56,7 +57,15 @@ const DoctorsList = () => {
         }
     }
 
-    return <div>{renderLandingPage()}</div> 
+    return (    
+                <>
+                <Header/>
+                <div>
+                {renderLandingPage()}
+                </div> 
+                </>
+                
+            )
 }
 
 export default DoctorsList

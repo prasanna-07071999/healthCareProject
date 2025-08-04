@@ -22,19 +22,31 @@
     font-family: roboto;
     color: #1e293b;
     font-weight: 600;
-    
 }
 .doctor-specilization{
     font-size: 15px;
     color: #475569;
     font-family: 'Segoe UI';
-    text-decoration: none;
+    margin-top: 0px;
 }
 .doctor-availability{
-    color: green;
     font-size: 20px;
-    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0px;
 }
+
+.card-status-leave {
+  color: #dc3545;
+}
+
+.card-status-available{
+  color:#28a745;
+}
+
+.card-status-booked{
+  color:#fd7e14;
+}
+
 
 @media screen and (max-width: 768px) {
   .list-container {
